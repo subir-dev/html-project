@@ -1,0 +1,702 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    --yellow-color:#e9b950;
+    --blue-color:#2a3450;
+    --white-color:white;
+
+}
+/* css reset start here */
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    padding: 0;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", serif;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 1170px;
+    width: 100%;
+    margin: auto;
+}
+/* css reset end here  */
+
+/* topnav area start */
+.topnav-area{
+    width: 100%;
+    background-color: var(--yellow-color);
+}
+.topnav-area .container{
+    display: flex;
+    padding: 15px 0;
+}
+.topnav-area .container .left{
+    margin-right: auto;
+}
+.topnav-area .left ul{
+    display: flex;
+}
+.topnav-area .left ul li{
+    color: white;
+    padding: 0 15px;
+}
+.topnav-area .right ul{
+    display: flex;
+}
+.topnav-area .right ul li .fa{
+    color: white;
+    padding: 0 15px;
+}
+/* topnav area end */
+
+/* nav area start */
+.nav-area{
+    width: 100%;
+    display: flex;
+}
+.nav-area .container{
+    display: flex;
+    align-items: center;
+    padding: 25px 0;
+}
+.nav-area .container .left{
+    margin-right: auto;
+}
+.nav-area .container .right ul{
+    display: flex;
+    gap: 20px;
+}
+.nav-area .container .right ul li a{
+    color: var(--blue-color);
+    font-size: 1rem;
+    font-weight: 600;
+}
+.nav-area .container .right ul li .fa{
+    color: var(--blue-color);
+}
+/* nav area end */
+
+/* banner area start */
+.banner-area{
+    width: 100%;
+    min-height: 700px;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-inr{
+    width: 100%;
+}
+
+.banner-inr h2{
+    font-size: 1.2rem;
+    color: var(--yellow-color);
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.banner-inr h1{
+    font-size: 5rem;
+    color: var(--white-color);
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.banner-inr p{
+    font-size: 1rem;
+    color: var(--white-color);
+    font-weight: 400;
+    line-height: 1.4;
+    margin-bottom: 50px;
+}
+
+.banner-inr a{
+    color: var(--white-color);
+    background-color: var(--yellow-color);
+    font-size: 1.2rem;
+    padding: 15px 20px;
+    font-weight: 500;
+}
+/* banner area end */
+
+/* about area start */
+.about-area{
+    width: 100%;
+    margin: 100px 0;
+}
+.about-area .container{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.about-area .container .left{
+    margin-right: auto;
+}
+.about-area .container .right h2{
+    font-size: 1.2rem;
+    color: var(--yellow-color);
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.about-area .container .right h1{
+    font-size: 3.1rem;
+    color: var(--blue-color);
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 30px;
+}
+.about-area .container .right p{
+    font-size: 1rem;
+    color: #4b4b4b;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-bottom: 50px;
+}
+.about-area .container .right a{
+    color: var(--white-color);
+    background-color: var(--blue-color);
+    font-size: 1.2rem;
+    padding: 15px 20px;
+    font-weight: 500;
+}
+/* about area end */
+
+/* service area start */
+.service-area{
+    width: 100%;
+    background-color: #f3f3f3;
+    padding: 100px 0;
+}
+.service-area .container{
+    text-align: center;
+}
+.service-area .practice-sec{
+    display: flex;
+    text-align: left;
+    gap: 30px;
+}
+.service-area .practice-sec .img{
+    text-align: center;
+}
+.service-area h2{
+    font-size: 1.2rem;
+    color: var(--yellow-color);
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.service-area h1{
+    font-size: 3.1rem;
+    color: var(--blue-color);
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+.service-area .container .box{
+    flex: 1;
+    background-color: white;
+    padding: 30px;
+}
+.service-area .container .box h3{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #111c31;
+    margin: 15px 0;
+}
+.service-area .container .box p{
+    font-size: 1rem;
+    color: #4b4b4b;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.service-area .container .box a{
+    font-size: 1.1rem;
+    color: #111c31;
+    font-weight: 600;
+}
+/* service area end */
+
+/* info area start */
+.info-area{
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.info-area .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    text-align: center;
+    padding: 50px 0;
+}
+.info-area .container .area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+.info-area .container .area .icon{
+    font-size: 70px;
+    color: var(--yellow-color);
+}
+.info-area .container .area .icon-txt h3{
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 10px;
+}
+.info-area .container .area .icon-txt p{
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+}
+/* info area end */
+
+/* choose area start */
+.choose-area{
+    width: 100%;
+    background-color: #fafafa;
+    padding-top: 100px;
+}
+.choose-area .container{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.choose-area .container .left h2{
+    font-size: 1.2rem;
+    color: var(--yellow-color);
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.choose-area .container .left h1{
+    font-size: 3.1rem;
+    color: var(--blue-color);
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+.choose-area .container .left1{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.choose-area .container .left .area{
+    display: flex;
+    gap: 30px;
+    flex-basis: 47%;
+    
+}
+.choose-area .container .left .area .icon ul{
+    background-color: #f6ead1;
+    padding: 10px;
+}
+.choose-area .container .left .area .icon ul li a .fa{
+    color: var(--yellow-color);
+    font-size: 25px;
+}
+
+.choose-area .container .left .area .text h3{
+    color: #111C31;
+    font-size: 24px;
+    font-weight: 600;
+}
+.choose-area .container .left .area .text p{
+    font-size: 1rem;
+    color: #4b4b4b;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+.choose-area .container .left2{
+    display: flex;
+    gap: 30px;
+}
+/* choose area end */
+
+/* team area start */
+.team-area{
+    width: 100%;
+    background-color: #f5f5f5;
+    padding: 100px 0;
+}
+.team-area .container{
+    text-align: center;
+}
+.team-area .practice-area{
+    display: flex;
+    gap: 30px;
+}
+.team-area h2{
+    font-size: 1.2rem;
+    color: var(--yellow-color);
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.team-area h1{
+    font-size: 3.1rem;
+    color: var(--blue-color);
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+.team-area .practice-area .box .bg{
+    background-color: white;
+    padding: 25px 0;
+}
+.team-area .practice-area .box .bg h4{
+    color: #111C31;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.team-area .practice-area .box .bg p{
+    font-size: 1rem;
+    color: #4b4b4b;
+    font-weight: 500;
+}
+/* team area end */
+
+/* solution area start */
+.solution-area{
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 0;
+}
+.solution-area .container{
+    display: flex;
+    gap: 30px;
+    color: white;
+    align-items: center;
+}
+.solution-area .container .left{
+    margin-right: auto;
+}
+.solution-area .container .left h1{
+    font-size: 3.1rem;
+    color: var(--white-color);
+    font-weight: 700;
+}
+.solution-area .container .right .area{
+    display: flex;
+    gap: 30px;
+}
+.solution-area .container .right .area .icon ul{
+    background-color: var(--white-color);
+    padding: 30px;
+    border-radius: 50px;
+    /* margin-top: 45px; */
+}
+.solution-area .container .right .area .icon ul li a .fa{
+    color: var(--blue-color);
+    font-size: 30px;
+}
+.solution-area .container .right .area .text h5{
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 35px;
+}
+/* solution area end */
+
+/* testimonial area start */
+.testimonial-area{
+    width: 100%;
+    padding: 100px 0;
+}
+.testimonial-area .practice-area{
+    display: flex;
+    gap: 30px;
+}
+.testimonial-area .practice-area .box1 h2{
+    font-size: 1.2rem;
+    color: var(--yellow-color);
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.testimonial-area .practice-area .box1 h1{
+    font-size: 3.1rem;
+    color: var(--blue-color);
+    font-weight: 700;
+}
+.testimonial-area .practice-area .area{
+    display: flex;
+    gap: 30px;
+}
+.testimonial-area .practice-area .box{
+    background-color: #f8f8f8;
+    padding: 0 20px;
+    padding: 30px 20px;
+}
+.testimonial-area .container .practice-area .box ul li a .fa{
+    color: #111C31;
+    font-size: 20px;
+}
+.testimonial-area .container .practice-area .box p{
+    font-size: 1rem;
+    color: #4B4B4B;
+    font-weight: 500;
+    margin: 30px 0;
+}
+.testimonial-area .container .practice-area .box .area .text h3{
+    font-size: 24px;
+    font-weight: 600;
+    color: #111C31;
+    margin-bottom: 10px;
+}
+.testimonial-area .container .practice-area .box .area .text h5{
+    font-size: 1rem;
+    color: #4B4B4B;
+    font-weight: 500;}
+/* testimonial area end */
+
+/* faq area start */
+.faq-area{
+    width: 100%;
+    padding: 100px 0;
+    background-color: #f3f3f3;
+}
+.faq-area .container{
+    display: flex;
+    gap: 100px;
+}
+.faq-area .container .left img{
+    margin-top: 120px;
+}
+.faq-area .container .right h2{
+    font-size: 1.2rem;
+    color: var(--yellow-color);
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.faq-area .container .right h1{
+    font-size: 3.1rem;
+    color: var(--blue-color);
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+.faq-area .container .right .box{
+    background-color: white;
+    margin: 30px 0;
+    padding: 0 20px;
+}
+.faq-area .container .right .box1 h3{
+    font-size: 18px;
+    color: #111C31;
+    font-weight: 700;
+    padding-top: 20px;
+    margin-bottom: 25px;
+}
+.faq-area .container .right .box p{
+    font-size: 1rem;
+    color: #4B4B4B;
+    font-weight: 500;
+    padding-bottom: 35px;
+    margin-left: 15px;
+}
+.faq-area .container .right .box2 h3{
+    font-size: 18px;
+    color: #111C31;
+    font-weight: 700;
+    padding: 20px 0;
+}
+.faq-area .container .right .box3 h3{
+    font-size: 18px;
+    color: #111C31;
+    font-weight: 700;
+    padding: 20px 0;
+}
+/* faq area end */
+
+/* consultation area start */
+.consultation-area{
+    width: 100%;
+    display: flex;
+    background: #BCBCBC;
+    align-items: center;
+}
+/* .consultation-area .container{
+    display: flex;
+} */
+.consultation-area .left
+{
+    flex: 1;
+    background-color: black;
+}
+.consultation-area .left .area{
+    background-color: #111C31;
+    padding: 0 167px;
+    padding-right: 25px;
+}
+.consultation-area .left .area h2{
+    font-size: 1.2rem;
+    color: var(--yellow-color);
+    font-weight: 400;
+    margin-bottom: 15px;
+    margin-top: 100px;
+}
+.consultation-area .left .area h1{
+    font-size: 3.1rem;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+.consultation-area .right
+{
+    border: 1px solid;
+    overflow: hidden;
+    width: 100%;
+    background: #eee;
+    flex: 1;
+}
+.consultation-area .right img
+{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.consultation-area
+{
+    background:url(../images/img01.jpg);
+    background-position: top right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background: black;
+}
+.form-group .form{
+    padding-top: 15px;
+    background-color: #071226;
+    border: none;
+    margin: 15px 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 50px;
+    font-size: 1rem;
+}
+.consultation-area .left .area a{
+    color: var(--white-color);
+    background-color: var(--yellow-color);
+    font-size: 1.2rem;
+    padding: 15px 20px;
+    font-weight: 500;
+}
+/* consultation area end */
+
+/* blog area start */
+.blog-area{
+    width: 100%;
+    padding: 100px 0;
+}
+.blog-area .container{
+    text-align: center;
+}
+.blog-area h2{
+    font-size: 1.2rem;
+    color: var(--yellow-color);
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.blog-area h1{
+    font-size: 3.1rem;
+    color: var(--blue-color);
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+.blog-area .practice-area{
+    display: flex;
+    gap: 30px;
+}
+.blog-area .box .bg{
+    background-color: #f8f8f8;
+    padding: 20px;
+}
+.blog-area .box .bg h3{
+    text-align: left;
+    color: #051235;
+    font-size: 1.2rem;
+}
+.blog-area .container .box .bg .left .icon{
+    display: flex;
+}
+.blog-area .container .box .bg .left .text h6{
+    margin: 0;
+}
+/* blog area end */
+
+/* subscribe area start */
+.subscribe-area .container .bg{
+    width: 100%;
+    background-color: #E9B950;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+}
+.subscribe-area .container .bg .left{
+    margin-right: auto;
+}
+.subscribe-area .container .bg .left h1{
+    font-size: 30px;
+    color: white;
+    font-weight: 700;
+}
+.subscribe-area .container .bg .right{
+    display: flex;
+}
+.form-group .form{
+    padding-top: 15px;
+    background-color: white;
+    border: none;
+    margin: 15px 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 50px;
+    font-size: 1rem;
+}
+.subscribe-area .container .bg .right .button-area a{
+    color: var(--white-color);
+    background-color: var(--blue-color);
+    font-size: 1.2rem;
+    padding: 15px 20px;
+    font-weight: 500;
+}
+/* subscribe area end */
+
+/* footer area start */
+.footer-area{
+    width: 100%;
+    padding: 100px 0;
+    background-color: #111C31;
+}
